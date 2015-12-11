@@ -1,5 +1,3 @@
-
-
 $(function(){
 
   function shuffle(array) {
@@ -42,8 +40,8 @@ $(function(){
     var amount = $('#amount').val();
 
     $('#amount').val(amount += selected);
+    
     shuffledColor = shuffle(colors).shift();
-
     $(this).css('background-color', shuffledColor);
 
   })
