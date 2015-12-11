@@ -2,18 +2,20 @@
 
 $(function(){
 
+  var count = 1;
 
   $('#equals').on('click', function(e){
     var calculation = $('#amount').val();
     var result = eval(calculation).toPrecision(2);
     $('#amount').val(result);
 
-    var timestamp = e.timeStamp;
-    var date = new Date(timestamp * 1000);
+    $('.logs').append('<p>' + count + '. ' + calculation + ' = ' + result + '</p>');
 
-    $('.logs').append('<p>' + result + '</p>');
+    var logCount = $('p.logs').length;
+    count += logCount;
 
     $('#amount').val('');
+
 
   })
 
@@ -48,7 +50,11 @@ $(function(){
     if (e.which === 13){
       var amount = $('#amount').val();
       var result = eval(amount);
-      $('.logs').append('<p>' + result + '</p>');
+
+      $('.logs').append('<p>' + count + '. ' + amount + ' = ' + result + '</p>');
+
+      var logCount = $('p.logs').length;
+      count += logCount;
 
       $('#amount').val('');
     }

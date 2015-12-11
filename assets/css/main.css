@@ -13,7 +13,9 @@ h1, h3 {
 }
 
 h3 {
-  font-weight: 300;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2em;
 }
 
 .divider {
@@ -35,16 +37,18 @@ ul li {
 
 .well {
   background-color: #34495e;
+  overflow: scroll;
 }
 
 .fixed-height {
-  height: 275px;
+  height: 435px;
 }
 
 p.logs {
   font-family: 'Lato', sans-serif; font-weight: 100;
   color: #fff;
   font-size: 1.75em;
+  text-align: left;
 }
 
 .flex {
@@ -79,4 +83,8 @@ p.logs {
 
 .form-control {
   padding: 10%;
+}
+
+.fa-times {
+  cursor: pointer;
 }
