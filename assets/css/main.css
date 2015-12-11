@@ -63,6 +63,14 @@ p.logs {
   background-color: #34495e;
 }
 
+.input-group {
+  margin-bottom: 5%;
+}
+
 .input-expand {
   padding: 2.5%;
+}
+
+.form-control {
+  padding: 10%;
 }
