@@ -1,7 +1,7 @@
 $(function(){
 
   function shuffle(array) {
-  var counter = array.length, temp, index;
+    var counter = array.length, temp, index;
     while (counter > 0) {
         index = Math.floor(Math.random() * counter);
         counter--;
@@ -24,7 +24,7 @@ $(function(){
     var result = eval(calculation).toPrecision(2);
     $('#amount').val(result);
 
-    $('.logs').append('<p>' + count + '. ' + calculation + ' = ' + result + '</p>');
+    $('.logs').append('<p>' + count + ' ) ' + calculation + ' = ' + result + '</p>');
 
     var logCount = $('p.logs').length;
     count += logCount;
