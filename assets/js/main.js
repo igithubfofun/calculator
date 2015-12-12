@@ -21,17 +21,21 @@ $(function(){
 
   $('#equals').on('click', function(e){
     var calculation = $('#amount').val();
-    var result = eval(calculation).toPrecision(2);
-    $('#amount').val(result);
+    if ( isNaN(calculation) ){
+      var result = eval(calculation).toPrecision(2);
+      $('#amount').val(result);
 
-    $('.logs').append('<p>' + count + ' ) ' + calculation + ' = ' + result + '</p>');
+      $('.logs').append('<p>' + count + ' ) ' + calculation + ' = ' + result + '</p>');
 
-    var logCount = $('p.logs').length;
-    count += logCount;
+      var logCount = $('p.logs').length;
+      count += logCount;
 
-    $('#amount').val('');
+      $('#amount').val('');
 
-    $('.numbers').css('background-color', '#34495e');
+      $('.numbers').css('background-color', '#34495e');
+    } else {
+      alert('nah');
+    }
 
   })
 
@@ -41,7 +45,7 @@ $(function(){
 
     $('#amount').val(amount += selected);
     
-    shuffledColor = shuffle(colors).shift();
+    shuffledColor = shuffle(colors)[0];
     $(this).css('background-color', shuffledColor);
 
   })
