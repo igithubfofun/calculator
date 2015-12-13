@@ -65,6 +65,7 @@ $(function(){
       count += logCount;
 
       $('#amount').val('');
+       $('.numbers').css('background-color', '#34495e');
     }
   })
 
