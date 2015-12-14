@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700|Handlee);
+/*Main elements*/
+header {
+  margin: 2.5%; }
+
+h1, h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: blue; }
+
+h3 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 2em; }
+
+ul li {
+  list-style: none; }
+
+p.logs {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.75em;
+  text-align: left; }
+
+.numbers {
+  display: flex;
+  border: 1px solid blue;
+  padding: 2.5%;
+  justify-content: center;
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  background-color: blue;
+  cursor: pointer; }
+
+#amount {
+  font-size: 2em;
+  letter-spacing: 1.5%; }
+
+/*Dividers*/
+.divider {
+  border-bottom: 2px solid rgba(192, 192, 192, 0.3);
+  margin: 2.5% 0 5.5% 0; }
+
+.vertical-divider {
+  border-left: 2px solid rgba(192, 192, 192, 0.3); }
+
+/*Layout*/
+.center {
+  text-align: center; }
+
+.well {
+  background-color: blue;
+  overflow: scroll; }
+
+.fixed-height {
+  height: 435px; }
+
+.flex {
+  display: flex;
+  margin: 1.5%; }
+
+/*Input*/
+.input-group {
+  margin-bottom: 5%; }
+
+.input-expand {
+  padding: 2.5%; }
+
+.form-control {
+  padding: 10%; }
+
+/*Icons*/
+.fa-times {
+  cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */
