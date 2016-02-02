@@ -80,7 +80,7 @@ p.logs {
 
 /*Input*/
 
-.input-group { 
+.input-group {
   margin-bottom: 5%;
 }
 
@@ -96,4 +96,8 @@ p.logs {
 
 .fa-times {
   cursor: pointer;
+}
+
+.zero {
+  width:345px;
 }
