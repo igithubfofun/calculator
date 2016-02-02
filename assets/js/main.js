@@ -52,6 +52,7 @@ $(function(){
 
   $('#clear').on('click', function(){
     $('#amount').val('');
+    $('.numbers').css('background-color', '#34495e');
   })
 
   $('#amount').on('keypress', function(e){
